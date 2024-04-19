@@ -8,7 +8,8 @@ const data = [{
     "employmentType": "Part-Time",
     "skills": ["Sketch", "Figma", "Adobe XD"],
     "hoursLoggedThisWeek": 20,
-    "onLeave": false
+    "onLeave": false,
+    "image" : "profile1.png"
   },
   
   {
@@ -21,7 +22,8 @@ const data = [{
     "employmentType": "Remote",
     "skills": ["SEO", "Content Marketing", "Google Analytics"],
     "hoursLoggedThisWeek": 35,
-    "onLeave": false
+    "onLeave": false,
+    "image" : "profile2.png"
   },
   
   {
@@ -34,7 +36,8 @@ const data = [{
     "employmentType": "Full-Time",
     "skills": ["Node.js", "MongoDB", "Express"],
     "hoursLoggedThisWeek": 40,
-    "onLeave": true
+    "onLeave": true,
+    "image" : "profile3.png"
   },
   
   {
@@ -47,7 +50,8 @@ const data = [{
     "employmentType": "Full-Time",
     "skills": ["Recruitment", "Employee Relations", "Performance Management"],
     "hoursLoggedThisWeek": 40,
-    "onLeave": false
+    "onLeave": false,
+    "image" : "profile4.png"
   },
   
   {
@@ -60,7 +64,8 @@ const data = [{
     "employmentType": "Full-Time",
     "skills": ["Network Security", "Hardware Troubleshooting", "Customer Service"],
     "hoursLoggedThisWeek": 40,
-    "onLeave": false
+    "onLeave": false,
+    "image" : "profile5.png"
   }
 ]
 
