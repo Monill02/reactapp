@@ -9,7 +9,6 @@ function App() {
 
     <Container fixed>
    <MediaCard employee= {data}/>
-   <MediaCard employee= {data}/>
    
     </Container>
     
