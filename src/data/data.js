@@ -50,7 +50,7 @@ const data = [{
     "employmentType": "Full-Time",
     "skills": ["Recruitment", "Employee Relations", "Performance Management"],
     "hoursLoggedThisWeek": 40,
-    "onLeave": false,
+    "onLeave": true,
     "image" : "profile4.png"
   },
   
@@ -64,7 +64,7 @@ const data = [{
     "employmentType": "Full-Time",
     "skills": ["Network Security", "Hardware Troubleshooting", "Customer Service"],
     "hoursLoggedThisWeek": 40,
-    "onLeave": false,
+    "onLeave": true,
     "image" : "profile5.png"
   }
 ]
