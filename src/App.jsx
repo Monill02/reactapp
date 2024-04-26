@@ -1,37 +1,39 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Title from './components/title.jsx'
 import data from './data/data.js'
-function App() {
-  const [count, setCount] = useState(0)
-  console.log(data [0].firstName);
+import MediaCard from './components/employeeCard.jsx'
+import Container from '@mui/material/Container';
+import Switch from '@mui/material/Switch';
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
+import Typography from '@mui/material/Typography';
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <Title name={data[0].firstName} />
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+function App() {
+
+   
+  
+    const [showinactive, setshowinactive] = useState(false);
+    const filteredData = showinactive ? data.filter((employee) => employee.onLeave) : data;
+
+    const handleToggle = (event) => {
+    setshowinactive(event.target.checked);
+    }
+    console.log (showinactive); 
+   return ( 
+
+    <Container fixed>
+     <Typography variant="h3" gutterBottom>
+      Employee dashboard
+    </Typography>
+    <Typography variant="p1" gutterBottom>
+        subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+        blanditiis tenetur
+      </Typography>
+    <Switch {...label} onClick={handleToggle} />
+   <MediaCard employee= {filteredData}/>
+   
+    </Container>
+    
+    );
 }
 
 export default App
